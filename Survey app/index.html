@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>FreeCodeCamp Project</title>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <h1 id="title">My freeCodeCamp Survey Form</h1>
+            <p id="description">My first freeCodeCamp project...</p>
+        </section>
+        <section class="formwrap">
+            <form action="" id="survey-form">
+                <div>
+                    <label id="name-label" for="name">Name</label>
+                    <input placeholder="Enter your name" type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <input placeholder="Enter your email" type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label id="number-label" for="age">Age</label>
+                    <input placeholder="Enter your age(between 13 and 35)" type="number" id="number" name="age" min="13"
+                        max="35">
+                </div>
+                <div>
+                    <label id="" for="dropdown">What's your role</label>
+                    <select name="role" id="dropdown" placeholder="Select your current role">
+                        <option value="student">Student</option>
+                        <option value="employed">Employed</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Select your gender</label>
+                    <div class="unwrapped">
+                        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label><br/>
+
+                        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Select your active socials</label>
+                    <div class="unwrapped">
+                        <input type="checkbox" name="twitter" id="twitter" value="twitter"><label
+                            for="male">Twitter</label><br/>
+                        <input type="checkbox" name="facebook" id="facebook" value="facebook"><label
+                            for="facebook">Facebook</label><br/>
+                        <input type="checkbox" name="linkedin" id="linkedin" value="linkedin"><label
+                            for="linkedin">LinkedIn</label><br/>
+                        <input type="checkbox" name="github" id="github" value="github"><label
+                            for="github">GitHub</label><br/>
+
+                    </div>
+                </div>
+                <div>
+                    <label for="comment">Any suggestions?</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add a message..."></textarea>
+                </div>
+                <input type="submit" id="submit" value="submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

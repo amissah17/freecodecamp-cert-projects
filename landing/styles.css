@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    font: 1em sans-serif;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    padding: 15px 40px;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+}
+
+#header-img {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.wrapper {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-wrap {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-wrap a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+#feats {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.prices {
+    width: 300px;
+    border: 1px solid #808080;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#pricewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#pricewrapper h3 {
+    padding: 15px;
+    background-color: #808080;
+    color: #fff;
+}
+
+#pricewrapper a {
+    padding: 15px;
+    background-color: #ffc400;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+#pricewrapper a:hover {
+    background-color: #ff8800;
+    transition: background-color 1.6s;
+}
+
+input[type="email"] {
+    padding: 15px;
+    width: 400px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 15px;
+    width: 100px;
+    background-color: #ffc400;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff8800;
+    transition: background-color 1.6s;
+}
+
+
+/* tablets */
+@media screen and (max-width:768px) {
+    #pricewrapper {
+        flex-direction: column;
+    }
+}
+
+
+/* mobiles */
+@media screen and (max-width:600px) {
+    body {
+        width: 100vw;
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        width: 100%;
+    }
+    #header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-wrap {
+        gap: 8px;
+    }
+    .prices {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    input[type="email"] {
+        width: 100%;
+    }
+}

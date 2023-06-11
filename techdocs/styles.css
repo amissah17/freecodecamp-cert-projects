@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+a.nav-link {
+    margin-bottom: 15px;
+}
+#main-doc {
+    display: flex;
+}
+#navbar {
+    width: 430px;
+    border-right: 2px solid rgb(138, 138, 139);
+}
+#navbar {
+    position: fixed;
+    left: 0;
+}
+#navbar li {
+    list-style: none;
+    padding: 5px 15px;
+}
+    #navbar li:hover {
+        background-color: rgb(179, 204, 216);
+        border-radius: 5px;
+    }
+#wrapper {
+    margin-left: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#navbar, #wrapper {
+    padding: 20px;
+    height: 100%;
+}
+section p:first-child{
+    margin-top: 15px;
+}
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+section {
+    min-height: 100vh;
+}
+section p{
+    margin-bottom: 15px;
+}
+section ul {
+    margin-left: 15px;
+}
+section .code {
+    background-color: #ccd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width:768px) {
+    body {
+        width: auto;
+    }
+    #navbar {
+        display: none;
+    }
+    #wrapper {
+        margin: auto;
+    }
+}
